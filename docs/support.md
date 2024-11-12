@@ -6,4 +6,4 @@ layout: default
 
 # Support
 
-If you need assistance during the integration process, please reach out to your SyncSavings integration contact.
+If you need assistance during the integration process, please reach out to your Sync Savings integration contact.

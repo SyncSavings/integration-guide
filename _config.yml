@@ -4,9 +4,6 @@ theme: just-the-docs
 
 url: https://syncsavings.github.io/integration-guide
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
 callouts_level: quiet
 callouts:
   highlight:

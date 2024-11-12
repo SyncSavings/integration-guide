@@ -4,6 +4,8 @@ nav_order: 4
 layout: default
 ---
 
+# Token Payload Structure
+
 ```json
 {
   "userId": "123abc",

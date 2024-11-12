@@ -4,6 +4,8 @@ nav_order: 5
 layout: default
 ---
 
+## Security Considerations
+
 ### Passwordless Experience
 
 - **User Authentication**: Only authenticated users should generate tokens.

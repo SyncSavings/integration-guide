@@ -22,10 +22,9 @@ layout: default
   "postCode": "EC3N 4AB",
   "isUkTaxpayer": true,
   "isUkResident": true,
-  "employmentStatus": "employment-status",
+  "employmentStatus": "employed",
   "primarySourceOfIncome": "salary",
-  "industry": "sales",
-  "occupation": "customer-service" 
+  "industry": "sales"
 }
 ```
 

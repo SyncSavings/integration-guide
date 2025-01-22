@@ -115,7 +115,7 @@ All fields are required unless agreed otherwise.
   - "family-or-gifted"
   - "loan"
   - "inheritance"
-- **taxResidency**: The country where the Saver is a tax resident. Currently limited to "GB".
+- **taxResidency**: The country where the Saver is a tax resident in ISO 3166 format . Currently limited to "GB".
 
 {: .important }
 Ensure data accuracy to prevent account creation issues.

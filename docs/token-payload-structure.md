@@ -53,12 +53,12 @@ All fields are required unless agreed otherwise.
 - **lastName**: The family name of the Saver.
 - **email**: The email address of the Saver.
 - **dateOfBirth**: The date of birth of the Saver in ISO 8601 format.
-- **mobileNumber**: The mobile phone number of the Saver in international format (e.g., "+447123456789").
+- **mobileNumber**: The mobile phone number of the Saver in international format (e.g. "+447123456789").
 - **address**: The Saver's UK address details:
   - **property**: How the Saver's residence is identified.
   - **street**: The street name of the Saver's address.
   - **city**: The city name of the Saver's address.
-  - **country**: A 2-character country code in ISO 3166 format (e.g., "GB").
+  - **country**: A 2-character country code in ISO 3166 format (e.g. "GB").
   - **postCode**: The postal code for the Saver's address.
 - **sourceAccountDetails**: This is the bank account where Withdrawal Transactions will be paid to:
   - **accountNumber**: The bank account number.
@@ -93,14 +93,14 @@ All fields are required unless agreed otherwise.
     - "accountancy-banking-and-finance"
     - "retail-and-wholesale"
     - "social-and-humanities-scientists"
-  - **occupation**: The Saver’s specific job role or occupation. This is a very long enum of possible values (e.g., "marketer", "software-engineer", "nurse"). The full list of values can be provided upon request.
+  - **occupation**: The Saver’s specific job role or occupation. This is a very long enum of possible values (e.g. "marketer", "software-engineer", "nurse"). The full list of values can be provided upon request.
   - **status**: The Saver's employment status. Allowed values:
     - "employed"
     - "retired"
     - "self-employed"
     - "unemployed"
   - **income**: Details of the Saver's income:
-    - **currency**: The currency of the Saver's income in ISO 4217 format (e.g., "GBP").
+    - **currency**: The currency of the Saver's income in ISO 4217 format (e.g. "GBP").
     - **value**: The monetary value of the Saver's income.
 - **sourceOfFunds**: The nature of the money being used to fund the bank account. Allowed values include:
   - "gambling-or-lottery"

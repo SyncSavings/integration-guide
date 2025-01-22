@@ -8,7 +8,6 @@ layout: default
 
 {: .no_toc }
 
-This is written on introduction.md
 
 ## Table of contents
 

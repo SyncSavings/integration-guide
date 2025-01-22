@@ -25,7 +25,7 @@ layout: default
   },
   "sourceAccountDetails": {
     "accountNumber": "11223344",
-    "sortCode": "60-83-71",
+    "sortCode": "608371",
     "accountOwner": "Christopher Robin"
   },
   "institution": "Winslow Luggages",

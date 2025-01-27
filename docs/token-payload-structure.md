@@ -25,7 +25,7 @@ layout: default
   },
   "sourceAccountDetails": {
     "accountNumber": "11223344",
-    "sortCode": "60-83-71",
+    "sortCode": "608371",
     "accountOwner": "Christopher Robin"
   },
   "institution": "Winslow Luggages",
@@ -49,6 +49,7 @@ layout: default
 All fields are required unless agreed otherwise.
 
 - **userId**: _(string, required)_ A unique identifier for the Saver.
+- **distributorId**: _(string, required)_ The ID unique to your platform, provided by Sync
 - **firstName**: _(string, required)_ The given name of the Saver.
 - **lastName**: _(string, required)_ The family name of the Saver.
 - **email**: _(string, required)_ The email address of the Saver.

@@ -51,6 +51,7 @@ All fields are required unless agreed otherwise.
 - **userId**: A unique identifier for the Saver.
 - **firstName**: The given name of the Saver.
 - **lastName**: The family name of the Saver.
+- **distributorId**: The ID unique to your platform (Provided by Sync Savings)
 - **email**: The email address of the Saver.
 - **dateOfBirth**: The date of birth of the Saver in ISO 8601 format.
 - **mobileNumber**: The mobile phone number of the Saver in international format (e.g. "+447123456789").

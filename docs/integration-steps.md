@@ -107,7 +107,6 @@ const userData = {
   institution: "Winslow Luggages",
   employment: {
     industry: "marketing-advertising-and-pr",
-    occupation: "marketer",
     status: "employed",
     income: {
       currency: "GBP",

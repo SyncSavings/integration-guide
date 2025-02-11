@@ -31,7 +31,6 @@ layout: default
   "institution": "Winslow Luggages",
   "employment": {
     "industry": "marketing-advertising-and-pr",
-    "occupation": "marketer",
     "status": "employed",
     "income": {
       "currency": "GBP",
@@ -94,7 +93,6 @@ All fields are required unless agreed otherwise.
     - "accountancy-banking-and-finance"
     - "retail-and-wholesale"
     - "social-and-humanities-scientists"
-  - **occupation**: The Saver’s specific job role or occupation. This is a very long enum of possible values (e.g. "marketer", "software-engineer", "nurse"). The full list of values can be provided upon request.
   - **status**: The Saver's employment status. Allowed values:
     - "employed"
     - "retired"

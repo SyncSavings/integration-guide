@@ -71,7 +71,7 @@ To access the platform, you'll need to generate a JWT token containing your user
 {: .warning }
 ❗Only allow logged-in users to generate a token with their email and user ID. Failing to enforce this could expose sensitive user data to attackers.
 
-2. **Prepare User Data**: Collect the required user information (see [Token Payload Structure](https://www.notion.so/Integration-Guide-112f377f98a380028f7bd14ff0413d99?pvs=21)).
+2. **Prepare User Data**: Collect the required user information (see [Token Payload Structure](https://syncsavings.github.io/integration-guide/docs/token-payload-structure.html)).
 3. **Create the Token Payload**: Construct a JSON object with the user's data.
 4. **Sign the Token**: Use your private key to sign the JWT token using the RS256 algorithm.
 

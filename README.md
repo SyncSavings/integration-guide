@@ -1,12 +1,12 @@
 # Sync Savings Integration Guide
 
-## Introduction
+## Introduction
 
 This repo serves as the integration guide for Distributors that want to use the [UI plugin](https://github.com/SyncSavings/ui-plugin/). It exists to clearly communicate the requirements for those wanting to use the UI Plugin.
 
 ## Building and previewing your site locally
 
-### Setup
+### Setup
 
 1. Install Ruby - use [CHRuby] to get version 3.3.5
 2. Install [Jekyll]

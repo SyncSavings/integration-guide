@@ -13,7 +13,7 @@ layout: default
 
 ### Secure Data Transfer Mechanism
 
-- **Token Signing**: Use your private key and the RS256 algorithm.
+- **Token Signing**: Use your private key.
 - **Token Verification**: Sync Savings uses your public key to verify tokens.
 
 ### Distributor Responsibilities

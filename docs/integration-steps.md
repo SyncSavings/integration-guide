@@ -18,7 +18,7 @@ layout: default
 
 ---
 
-## Generate API Credentials
+## Generate Credentials
 
 Before starting, you’ll need to create a unique key pair to secure your integration with the Sync Savings platform, this will be made up of a private key and public key.
 
@@ -26,11 +26,16 @@ Before starting, you’ll need to create a unique key pair to secure your integr
 
 Generate the key pair with the following specifications:
 
-- **Key Type**: RSA
-- **Key Length**: 2048 bits or higher
+- **Key Type**: Ed25519
 - **Format**: PEM format (the standard for web security)
 
-To help you create an RSA key pair, visit this resource: [How to Generate RSA Key Pairs](https://www.ssh.com/academy/ssh/keygen#how-to-generate-rsa-keys). This page provides multiple options for generating keys, including using OpenSSL, SSH-keygen, and other methods, so you can select the approach that best suits your setup.
+Generate your key pair using the below steps:
+```bash
+openssl genpkey -algorithm ed25519 -out sync-plugin-private.pem
+```
+```bash
+openssl pkey -in sync-plugin-private.pem -pubout -out sync-plugin-public.pem
+```
 
 **Action**: Generate your key pair as described, then securely send the public key to your Sync Savings integration contact. You will also receive your distributor ID during this process.
 
@@ -73,7 +78,7 @@ To access the platform, you'll need to generate a JWT token containing your user
 
 2. **Prepare User Data**: Collect the required user information (see [Token Payload Structure](https://syncsavings.github.io/integration-guide/docs/token-payload-structure.html)).
 3. **Create the Token Payload**: Construct a JSON object with the user's data.
-4. **Sign the Token**: Use your private key to sign the JWT token using the RS256 algorithm.
+4. **Sign the Token**: Use your private key to sign the JWT token.
 
 {: .note }
 💡 The token expiry (`expiresIn`) does not affect the session length, as Sync Savings will validate the token and create a session that lasts for 1 hour, regardless of the token's own expiry time.
@@ -81,48 +86,51 @@ To access the platform, you'll need to generate a JWT token containing your user
 **Example in Node.js using `jsonwebtoken`:**
 
 ```js
-const jwt = require("jsonwebtoken");
+import { SignJWT } from 'jose';
 
 const userData = {
-  userId: "abc123",
-  distributorId: "my-company ",
-  title: "mr",
-  firstName: "Christopher",
-  lastName: "Robin",
-  email: "christopher.robin@sync-savings.com",
-  dateOfBirth: "1969-12-31",
-  mobileNumber: "+447123456789",
+  userId: 'abc123',
+  distributorId: 'my-company',
+  title: 'mr',
+  firstName: 'Christopher',
+  lastName: 'Robin',
+  email: 'christopher.robin@sync-savings.com',
+  dateOfBirth: '1969-12-31',
+  mobileNumber: '+447123456789',
   address: {
-    property: "145",
-    street: "London Street",
-    city: "London",
-    country: "GB",
-    postCode: "EC3N 4AB",
+    property: '145',
+    street: 'London Street',
+    city: 'London',
+    country: 'GB',
+    postCode: 'EC3N 4AB',
   },
   sourceAccountDetails: {
-    accountNumber: "11223344",
-    sortCode: "608371",
-    accountOwner: "Christopher Robin",
+    accountNumber: '11223344',
+    sortCode: '608371',
+    accountOwner: 'Christopher Robin',
   },
-  institution: "Winslow Luggages",
+  institution: 'Winslow Luggages',
   employment: {
-    industry: "marketing-advertising-and-pr",
-    status: "employed",
+    industry: 'marketing-advertising-and-pr',
+    status: 'employed',
     income: {
-      currency: "GBP",
+      currency: 'GBP',
       value: 54321.09,
     },
   },
-  sourceOfFunds: "salary-or-bonus",
-  taxResidency: "GB",
+  sourceOfFunds: 'salary-or-bonus',
+  taxResidency: 'GB',
 };
 
 const privateKey = `[Your Private Key Here]`;
 
-const token = jwt.sign(userData, privateKey, {
-  algorithm: "RS256",
-  expiresIn: "30m",
-});
+const privateKeyObj = await importPKCS8(privateKey, "EdDSA");
+
+const jwt = await new SignJWT(userData)
+  .setProtectedHeader({ alg: 'EdDSA' })
+  .setIssuedAt()
+  .setExpirationTime('30m')
+  .sign(privateKeyObj);
 ```
 
 {: .warning }

@@ -86,7 +86,7 @@ To access the platform, you'll need to generate a JWT token containing your user
 **Example in Node.js using `jsonwebtoken`:**
 
 ```js
-import { SignJWT } from 'jose';
+import { SignJWT, importPKCS8 } from 'jose';
 
 const userData = {
   userId: 'abc123',

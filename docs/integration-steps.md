@@ -122,7 +122,10 @@ const userData = {
   taxResidency: 'GB',
 };
 
-const privateKey = `[Your Private Key Here]`;
+// Add your private key here
+const privateKey = `-----BEGIN PRIVATE KEY-----
+abcdefgh12345678
+-----END PRIVATE KEY-----`;
 
 const privateKeyObj = await importPKCS8(privateKey, "EdDSA");
 

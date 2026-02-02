@@ -60,6 +60,16 @@ Personal or contact detail forms are show with fields disabled when data provide
 
 ![Personal Details Preview](/images/signup_personal-preview.png) | ![Contact Details Preview](/images/signup_contact-preview.png)
 
+### Bank Details
+
+Users must declare a source bank account. Where they are available, we encourage all distribution partners to provide `sourceAccountDetails` in the token payload.
+
+{: .note}
+💡 Bank details input can be skipped by distributor-level configuration
+
+{: .warning}
+❗ Bank account detail validation is still performed on account creation if input is skipped. Ensure token payload provides valid details!
+
 <style>
 td, th {
    border: none!important;

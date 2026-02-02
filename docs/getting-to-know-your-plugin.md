@@ -50,10 +50,21 @@ There are a few different ways this page can present depending on distributor-le
 :---:|:---:|:---:
 `employment.status` and `employment.industry` token payload fields are empty and configuration provides on default or fallback values | Token payload fields are empty and configuration values are marked as `PREFILLED`. Status and Industry fields are editable by user | Configuration values are marked as `FIXED` or values provided by token payload. If both are provided, configuration value is used as backing value.
 
+### Personal and Contact Details
+
+These pages gather further details about the new user. They are prefilled using the token payload and allow input of missing data. If all necessary data is provided, form views and skipped and a preview/check view is shown in its place.
+
+![Personal Details Form](/images/signup_personal-form.png) | ![Contact Details Form](/images/signup_contact-form.png)
+
+Personal or contact detail forms are show with fields disabled when data provided by token payload.
+
+![Personal Details Preview](/images/signup_personal-preview.png) | ![Contact Details Preview](/images/signup_contact-preview.png)
+
 <style>
 td, th {
    border: none!important;
    text-align: center;
+   vertical-align: top;
 }
 table {
   table-layout: fixed;
@@ -65,7 +76,7 @@ table {
 }
 
 p:has(>img) {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 

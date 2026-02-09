@@ -101,6 +101,8 @@ The `Escalated` status is the result of missing or inconsistent data. As such, u
 
 ### Complete
 
+Upon completing `Saver` creation (and any Identity Verification), a Bank Account is created and Goal and Deposit data are committed.
+
 ![Sign up Complete](/images/signup_complete.png)
 
 <style>

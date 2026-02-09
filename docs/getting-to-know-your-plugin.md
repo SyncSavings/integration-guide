@@ -70,6 +70,10 @@ Users must declare a source bank account. Where they are available, we encourage
 {: .warning}
 ❗ Bank account detail validation is still performed on account creation if input is skipped. Ensure token payload provides valid details!
 
+When page is enabled, the form can still be prefilled with data from the distributor payload. As with the personal and contact details forms, prefilled values are not editable (as shown by the greyed-out name field below).
+
+![Bank Details Screen](/images/signup_bank-details.png)
+
 <style>
 td, th {
    border: none!important;

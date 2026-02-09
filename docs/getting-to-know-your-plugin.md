@@ -74,6 +74,18 @@ When page is enabled, the form can still be prefilled with data from the distrib
 
 ![Bank Details Screen](/images/signup_bank-details.png)
 
+### Documents
+
+There are a number of critical documents (from both Sync and partner bank) that users must acknowledge and accept before an account can be created.
+
+![Documents Screen - Not Viewed](/images/signup_documents-notviewed.png) | ![Documents Screen - Viewed](/images/signup_documents-viewed.png)
+
+On agreeing to Terms & Conditions and submitting, a `Saver` record is created in our system.
+
+### Complete
+
+![Sign up Complete](/images/signup_complete.png)
+
 <style>
 td, th {
    border: none!important;

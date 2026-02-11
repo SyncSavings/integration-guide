@@ -26,7 +26,7 @@ The recommended way to embed the plugin is via an HTML `<iframe>`. Example:
 
 ```html
 <iframe
-  src="https://plugin.example.com/?env=PRODUCTION"
+  src="https://(sandbox.)app.sync-savings.com?token=[INSERT_GENERATED_TOKEN]"
   width="100%"
   height="600"
   frameborder="0"
@@ -42,6 +42,10 @@ The recommended way to embed the plugin is via an HTML `<iframe>`. Example:
 ### Referrer Header
 
 Ensure the host domain is included in the `referrer` header. Some frameworks or agents may require manual configuration to ensure this header is set correctly.
+
+### Authentication
+
+Signed payload must be attached to `src` url. See [token generation](/docs/integration-steps.html#generate-jwt-tokens)
 
 ## Embedding in Common Frameworks
 
@@ -70,4 +74,4 @@ For other frameworks or platforms, refer to their official documentation for emb
 - **Plugin not loading:** Check the iframe `src` URL and required attributes.
 - **Referrer issues:** Verify the `referrerpolicy` attribute and your application's referrer settings.
 
-For further assistance, contact [support](support.md).
+For further assistance, contact [support](/docs/support.html).

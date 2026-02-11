@@ -6,7 +6,7 @@ layout: default
 
 # Embedding
 
-Some partners may wish to embed our plugin directly into their application for a seamless user experience. This guide outlines the requirements and steps to securely embed the plugin using an iframe.
+Some partners may wish to embed our plugin directly into their application for a seamless user experience. This guide outlines the requirements and steps to securely embed the plugin using an `iframe` or other WebView.
 
 ## Prerequisites
 

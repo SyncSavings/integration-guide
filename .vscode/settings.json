@@ -1,6 +1,4 @@
 {
-  "cSpell.words": [
-    "callouts",
-    "color"
-  ]
+  "cSpell.words": ["callouts", "color"],
+  "editor.formatOnSave": false
 }

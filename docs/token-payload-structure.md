@@ -5,6 +5,22 @@ layout: default
 ---
 
 # Token Payload Structure
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{: toc }
+
+As part of authenticating user sessions, we require distributors to provide a signed payload on access the Plugin.
+
+{: .note}
+💡 We encourage our distributors to provide ALL available matching data. This will reduce friction in onboarding and keep user data in sync on subsequent logins.
+
+Depending on the desired user experience and the user data available to the distributor, different data may be required or beneficial to user experience. The following page breaks down the accepted payload fields and how different scenarios may affect their usage.
+
+## Example Full Payload
 
 ```json
 {

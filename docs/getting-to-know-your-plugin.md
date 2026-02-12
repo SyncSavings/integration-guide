@@ -72,10 +72,10 @@ Personal or contact detail forms are show with fields disabled when data provide
 Users must declare a source bank account. Where they are available, we encourage all distribution partners to provide `sourceAccountDetails` in the token payload.
 
 {: .note}
-💡 Bank details input can be skipped by distributor-level configuration
+💡 Distributors should provide Bank Details when available. Discuss with your integration contact if this is not possible.
 
 {: .warning}
-❗ Bank account detail validation is still performed on account creation if input is skipped. Ensure token payload provides valid details!
+❗ Bank account detail validation is still performed on account creation if user input is not used. Ensure token payload provides valid details!
 
 When page is enabled, the form can still be prefilled with data from the distributor payload. As with the personal and contact details forms, prefilled values are not editable (as shown by the greyed-out name field below).
 

@@ -134,3 +134,20 @@ All fields are required unless agreed otherwise.
 
 {: .important }
 Ensure data accuracy to prevent account creation issues.
+
+## Minimum Viable Payload
+
+Password-based users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, the minimum data points required are the following:
+
+```json
+{
+  "distributorId": "my-company",
+  "institution": "Winslow Luggages",
+  "sourceOfFunds": "salary-or-bonus",
+  "taxResidency": "GB"
+}
+```
+
+### Pre-authenticated Users
+
+Pre-authenticated user payloads are required to provide the `email` property as part of the minimum token. This acts as the primary identifier

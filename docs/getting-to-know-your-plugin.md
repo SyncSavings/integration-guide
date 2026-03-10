@@ -21,9 +21,9 @@ As simple as the Plugin is to use, there are a number of ways it can adapt to it
 
 There are two possible landing spots for returning users, depending on whether a user that has been pre-authenticated (i.e. attached payload is generated and signed by **you** and is specific to that user) or needs to provide an email and password:
 
-![Password Log-in Screen](/images/login_screen.png) | ![Account Screen](/images/account_screen.png)
+![Account Screen](/images/account_screen.png) | ![Password Log-in Screen](/images/login_screen.png)
 :---:|:---:
-Password users are directed to a branded login-screen | Pre-authenticated users are directed towards their account page
+Pre-authenticated users are directed towards their account page | Password users are directed to a branded login-screen
 
 ### New Users
 

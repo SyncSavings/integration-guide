@@ -37,7 +37,7 @@ Onboarding Complete screen’s NextSteps, Dashboard’s NextDeposit graphic and 
 
 ## 🖱️ Buttons
 
-**`Button (optional)`** overrides the primary/action button background colour. We recommend leaving this field empty or matching buttons to the redirecting or embedding app for a truly seamless transition.
+**`Button (optional)`** overrides the primary/action button background colour. We recommend leaving this field empty or matching buttons to your app for a truly seamless transition.
 
 NOTE: When using especially light colours, we recommend using Black text by setting the **`useDarkButtonText`** variable to **`YES`**
 

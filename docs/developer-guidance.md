@@ -12,7 +12,7 @@ layout: default
   - Access the [token generation tool](https://token-gen.sandbox.sync-savings.com/) to create and customize JWT payloads for testing and integration.
   - Enter your signing (private) key, adjust the payload as needed, and click **Generate JWT**.
 
-{: .warning}
+{: .note}
 Your private key is stored only in your browser's Local Storage for convenience.
 <br/>
 All token generation happens locally—no keys or data are sent to any server.
@@ -27,13 +27,13 @@ All token generation happens locally—no keys or data are sent to any server.
 - **Cookies are used for caching payload and form data between page loads.**
   - This can sometimes cause cross-session data consistency issues.
 
-**Best Practices:**
+### Best Practices
 
 - Use an anonymous/incognito browser window for each test session to avoid stale data.
 - If embedding the app, ensure your host application allows cookies to be set and read as needed.
 - Be aware that cookies are partitioned to prevent cross-site tracking and are not accessible by third-party scripts.
 
-**Troubleshooting:**
+### Troubleshooting
 
 - If you encounter unexpected data or session issues, try clearing cookies or using a fresh browser session.
 

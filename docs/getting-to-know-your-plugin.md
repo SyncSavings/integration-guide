@@ -72,7 +72,7 @@ Personal or contact detail forms are show with fields disabled when data provide
 Users must declare a source bank account. Where they are available, we encourage all distribution partners to provide `sourceAccountDetails` in the token payload.
 
 {: .note}
-💡 Distributors should provide Bank Details when available. Discuss with your integration contact if this is not possible.
+💡 Distributors should provide Bank Details when available. Discuss with your integration manager if this is not possible.
 
 {: .warning}
 ❗ Bank account detail validation is still performed on account creation if user input is not used. Ensure token payload provides valid details!

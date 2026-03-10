@@ -9,7 +9,7 @@ layout: default
 
 In order to make your users (or your customer's users) feel as much as home possible, this document will guide you through the areas of our **Payroll Savings Plugin** that can be customised.
 
-Use this guide in parallel with the themes data spreadsheet provided by your sales/integration representative.
+Use this guide in parallel with the themes data spreadsheet provided by your sales/integration manager.
 
 ## Table of contents
 {: .no_toc .text-delta }

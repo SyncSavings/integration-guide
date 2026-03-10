@@ -35,7 +35,7 @@ openssl genpkey -algorithm ed25519 -out sync-plugin-private.pem
 openssl pkey -in sync-plugin-private.pem -pubout -out sync-plugin-public.pem
 ```
 
-**Action**: Generate your key pair as described, then securely send the public key to your Sync Savings integration contact. You will also receive your distributor ID during this process.
+**Action**: Generate your key pair as described, then securely send the public key to your Sync Savings integration manager or support. You will also receive your distributor ID during this process.
 
 ## Generate JWT Tokens
 

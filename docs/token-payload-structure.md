@@ -137,7 +137,7 @@ Ensure data accuracy to prevent account creation issues.
 
 ## Minimum Viable Payload
 
-Minimum viable payload requires some distributor-related properties that validate the session and allow fetching of necessary settings. In addition, pre-authenticated user tokens are required to provide the `email` property as it acts as the primary identifier.
+Minimum viable payload requires some distributor-related properties that validate the session and allow fetching of necessary settings. The `email` property acts as the primary identifier for a user and must be provided.
 
 ```json
 {
@@ -151,7 +151,7 @@ Minimum viable payload requires some distributor-related properties that validat
 
 ### Password Users
 
-Password users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, email is expected to be provided by the user as part of logging in or signing up and may be omitted from the token payload. The minimum data points required are the following:
+Password users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, `email` is expected to be provided by the user as part of logging in or signing up and may be omitted from the token payload. The minimum data points required are the following:
 
 ```json
 {

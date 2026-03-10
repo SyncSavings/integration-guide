@@ -13,7 +13,7 @@ layout: default
 1. TOC
 {: toc }
 
-As part of authenticating user sessions, we require distributors to provide a signed payload on access the Plugin.
+As part of authenticating user sessions, we require distributors to provide a signed token on access the Plugin.
 
 {: .note}
 💡 We encourage our distributors to provide ALL available matching data. This will reduce friction in onboarding and keep user data in sync on subsequent logins.
@@ -137,7 +137,21 @@ Ensure data accuracy to prevent account creation issues.
 
 ## Minimum Viable Payload
 
-Password-based users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, the minimum data points required are the following:
+Minimum viable payload requires some distributor-related properties that validate the session and allow fetching of necessary settings. In addition, pre-authenticated user tokens are required to provide the `email` property as it acts as the primary identifier.
+
+```json
+{
+  "distributorId": "my-company",
+  "institution": "Winslow Luggages",
+  "email": "christopher.robin@sync-savings.com",
+  "sourceOfFunds": "salary-or-bonus",
+  "taxResidency": "GB"
+}
+```
+
+### Password Users
+
+Password users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, email is expected to be provided by the user as part of logging in or signing up and may be omitted from the token payload. The minimum data points required are the following:
 
 ```json
 {
@@ -147,7 +161,3 @@ Password-based users are anonymous at the point of loading the plugin and it is 
   "taxResidency": "GB"
 }
 ```
-
-### Pre-authenticated Users
-
-Pre-authenticated user payloads are required to provide the `email` property as part of the minimum token. This acts as the primary identifier

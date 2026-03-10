@@ -29,7 +29,7 @@ Password users are directed to a branded login-screen | Pre-authenticated users 
 
 New users are directed to our Onboarding flow. Which begins with our basic facts and information screen.
 
-![Landing Explainer Screen](/images/image.png)
+![Landing Explainer Screen](/images/signup_information.png)
 
 ## Onboarding
 

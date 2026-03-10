@@ -23,15 +23,15 @@ Use this guide in parallel with the themes data spreadsheet provided by your sal
 
 Below are number of examples of the application of the _primary_ colour in our own **Sync Turquoise**:
 
-![Bullet Icons and Graphic base colour on the Landing Explainer Screen](/images/image.png)
+![Bullet Icons and Graphic base colour on the Landing Explainer Screen](/images/signup_information.png)
 
 Bullet Icons and Graphic base colour on the Landing Explainer Screen
 
-![Border of a selected Card and the Progress Stepper (Breadcrumbs)](/images/image%201.png)
+![Border of a selected Card and the Progress Stepper (Breadcrumbs)](/images/customising_card-stepper.png)
 
 Border of a selected Card and the Progress Stepper (Breadcrumbs)
 
-![Onboarding Complete screen’s NextSteps, Dashboard’s NextDeposit graphic and Transactions Item’s highlight text](/images/image%202.png)
+![Onboarding Complete screen’s NextSteps, Dashboard’s NextDeposit graphic and Transactions Item’s highlight text](/images/customising_nextsteps-nextdeposit-highlight.png)
 
 Onboarding Complete screen’s NextSteps, Dashboard’s NextDeposit graphic and Transactions Item’s highlight text
 
@@ -43,7 +43,7 @@ NOTE: When using especially light colours, we recommend using Black text by sett
 
 Below are some images of our Button palette with different variable arrangements:
 
-![Default](/images/image_(1).png) | ![**`Button`** set to a dark purple and **`useDarkButtonText`** left empty](/images/image_(2).png) | ![**`Button`**  set to a light purple and **`useDarkButtonText`** set to **`YES`**](/images/image_(3).png)
+![Default](/images/buttons_default.png) | ![**`Button`** set to a dark purple and **`useDarkButtonText`** left empty](/images/buttons_dark-purple.png) | ![**`Button`**  set to a light purple and **`useDarkButtonText`** set to **`YES`**](/images/buttons_light-purple.png)
 :--------------------------------:|:--------------------------------------------------------------------------------------------------:|:-------------------------------------:
 Default | **`Button`** set to a dark purple and **`useDarkButtonText`** left empty | **`Button`**  set to a light purple and **`useDarkButtonText`** set to **`YES`**
 
@@ -61,11 +61,11 @@ There are **3** options for styling your user’s Accounts (Pots). Read below on
 
 **1. Sync’s Built-in, block pastels**
 
-![image.png](/images/image%203.png)
+![image.png](/images/customising_block-account.png)
 
 **2. Sync’s Built-in gradients**
 
-![image.png](/images/image%204.png)
+![image.png](/images/customising_gradient-account.png)
 
 **3. Block Brand colour**
 
@@ -74,7 +74,7 @@ NOTE: When using especially dark colours, we recommend using White text by setti
 Examples:
 
 ![Left - **`Pot`** set to crimson and **`useLightCategoryFont`** set to **`YES`**
-Right - **`Pot`** set to pink and **`useLightCategoryFont`** left empty](/images/image%205.png)
+Right - **`Pot`** set to pink and **`useLightCategoryFont`** left empty](/images/customising_brand-account.png)
 
 Left - **`Pot`** set to crimson and **`useLightCategoryFont`** set to **`YES`**
 Right - **`Pot`** set to pink and **`useLightCategoryFont`** left empty
@@ -88,7 +88,7 @@ NOTE: When using especially dark colours, we recommend using White text by setti
 Below are some examples of the **`Card`** variable in use:
 
 ![Left - **`Card`** set to Sync *Accent Turquoise* and **`useCardLightText`** left empty.
-Right - **`Card`** set to a dark purple and **`UseCardLightText`** set to **`YES`**](/images/image%206.png)
+Right - **`Card`** set to a dark purple and **`UseCardLightText`** set to **`YES`**](/images/customising_card.png)
 
 Left - **`Card`** set to Sync _Accent Turquoise_ and **`useCardLightText`** left empty.
 Right - **`Card`** set to a dark purple and **`UseCardLightText`** set to **`YES`**
@@ -99,7 +99,7 @@ There are 2 primary text groups in the Plugin. **Heading** and **Body**. Each of
 
 Below is the landing page for all new Payroll Savings Plugin users. We can see an example of Heading and Body text
 
-![image.png](/images/image.png)
+![image.png](/images/signup_information.png)
 
 
 <style>

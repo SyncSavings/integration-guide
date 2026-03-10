@@ -18,6 +18,8 @@ Some partners may wish to embed our plugin directly into their application for a
 
 Distributors are required to provide a list of approved domains for our `PRODUCTION` and `SANDBOX` environments. Requests from non-approved domains will be blocked from embedding content.
 
+If a request is made from an non-approved domain, `X-Frame-Options=DENY;Content-Security-Policy="frame-ancestors 'none'"` headers will be attached to the response. Presentation of the failure to request plugin will be determined by the application or web framework used in your own application.
+
 To update your allowed domains, contact your integration manager or support.
 
 ## Embedding via iframe

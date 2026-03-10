@@ -1,5 +1,5 @@
 ---
-title: Customising your plugin
+title: Customising Your Plugin
 nav_order: 7
 layout: default
 ---

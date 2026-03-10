@@ -91,20 +91,20 @@ On agreeing to Terms & Conditions and submitting, a `Saver` record is created in
 
 ### Identity Verification
 
-Some of our partners will require their users to undergo a form of identity verification. These users will begin in a `Pending` state whilst they await results from the automatic checks on the data provided.
+Some of our partners will require their users to undergo a form of identity verification. These users will begin in a `pending` state whilst they await results from the automatic checks on the data provided.
 
 ![Pending Status](/images/signup_idv-pending.png)
 
-If all checks pass, users will be moved on to the Sign up Complete step, where their back account will be created.
+If all checks pass, users will be moved on to the Sign up Complete step, where their bank account will be created.
 
 There are two other non-Success outcomes of the automated checks.
 
 ![Escalated Status](/images/signup_idv-escalated.png) | ![Rejected Status](/images/signup_idv-rejected.png)
 :---:|:---:
-The `Escalated` status is the result of missing or inconsistent data. As such, users will be provided with a link to double check provided data and fill anything missing. | A user may be found to have certain history, associations or other sanctions that may forbid them from opening a UK bank account. These users will be put into the `Rejected` state.
+The `sscalated` status is the result of missing or inconsistent data. As such, users will be provided with a link to double check provided data and fill anything missing. | A user may be found to have certain history, associations or other sanctions that may forbid them from opening a UK bank account. These users will be put into the `rejected` state.
 
 {: .warning}
-❗ Users in a `Rejected` state will be prevented from progressing any further! They may reach out for more information but Sync is under no obligation to share details of Identity Check results to `Rejected` users.
+❗ Users in a `rejected` state will be prevented from progressing any further. They may reach out for more information but Sync is under no obligation to share details of Identity Check results to `rejected` users.
 
 ### Complete
 

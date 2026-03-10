@@ -1,5 +1,5 @@
 ---
-title: Know the Plugin
+title: Getting To Know Your Plugin
 nav_order: 6
 layout: default
 ---

@@ -59,7 +59,7 @@ There are a few different ways this page can present depending on distributor-le
 
 ### Personal and Contact Details
 
-These pages gather further details about the new user. They are prefilled using the token payload and allow input of missing data. If all necessary data is provided, form views and skipped and a preview/check view is shown in its place.
+These pages gather further details about the new user. They are prefilled using the token payload and allow input of missing data. If all necessary data is provided, form views are skipped and a preview/check view is shown in its place.
 
 ![Personal Details Form](/images/signup_personal-form.png) | ![Contact Details Form](/images/signup_contact-form.png)
 

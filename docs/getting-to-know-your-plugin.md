@@ -21,7 +21,7 @@ As simple as the Plugin is to use, there are a number of ways it can adapt to it
 
 There are two possible landing spots for returning users, depending on whether a user that has been pre-authenticated (i.e. attached payload is generated and signed by **you** and is specific to that user) or needs to provide an email and password:
 
-![Account Screen](/images/account_screen.png) | ![Password Log-in Screen](/images/login_screen.png)
+![Account Screen](https://syncsavings.github.io/integration-guide/images/account_screen.png) | ![Password Log-in Screen](https://syncsavings.github.io/integration-guide/images/login_screen.png)
 :---:|:---:
 Pre-authenticated users are directed towards their account page | Password users are directed to a branded login-screen
 
@@ -29,7 +29,7 @@ Pre-authenticated users are directed towards their account page | Password users
 
 New users are directed to our Onboarding flow. Which begins with our basic facts and information screen.
 
-![Landing Explainer Screen](/images/signup_information.png)
+![Landing Explainer Screen](https://syncsavings.github.io/integration-guide/images/signup_information.png)
 
 ## Onboarding
 
@@ -45,7 +45,7 @@ Below, we will go through key steps in the Onboarding flow and some of the behav
 
 Password authenticated users must provide a valid email address and password (repeated). This page will be omitted from the flow for plugin distributors that pre-authenticate their users.
 
-![Login Details Screen](/images/login_details.png)
+![Login Details Screen](https://syncsavings.github.io/integration-guide/images/login_details.png)
 
 ### Eligibility
 
@@ -53,7 +53,7 @@ This page prompts users to provide some details about their employment and make 
 
 There are a few different ways this page can present depending on distributor-level configuration and data within the token payload.
 
-![Empty Eligibility Form](/images/signup_eligibility-empty.png) | ![Prefilled Eligibility Form](/images/signup_eligibility-prefilled.png) | ![Hidden Fields Eligibility Form](/images/signup_eligibility-hidden.png)
+![Empty Eligibility Form](https://syncsavings.github.io/integration-guide/images/signup_eligibility-empty.png) | ![Prefilled Eligibility Form](https://syncsavings.github.io/integration-guide/images/signup_eligibility-prefilled.png) | ![Hidden Fields Eligibility Form](https://syncsavings.github.io/integration-guide/images/signup_eligibility-hidden.png)
 :---:|:---:|:---:
 `employment.status` and `employment.industry` token payload fields are empty and configuration provides on default or fallback values | Token payload fields are empty and configuration values are marked as `PREFILLED`. Status and Industry fields are editable by user | Configuration values are marked as `FIXED` or values provided by token payload. If both are provided, configuration value is used as backing value.
 
@@ -61,11 +61,11 @@ There are a few different ways this page can present depending on distributor-le
 
 These pages gather further details about the new user. They are prefilled using the token payload and allow input of missing data. If all necessary data is provided, form views are skipped and a preview/check view is shown in its place.
 
-![Personal Details Form](/images/signup_personal-form.png) | ![Contact Details Form](/images/signup_contact-form.png)
+![Personal Details Form](https://syncsavings.github.io/integration-guide/images/signup_personal-form.png) | ![Contact Details Form](https://syncsavings.github.io/integration-guide/images/signup_contact-form.png)
 
 Personal or contact detail forms are show with fields disabled when data provided by token payload.
 
-![Personal Details Preview](/images/signup_personal-preview.png) | ![Contact Details Preview](/images/signup_contact-preview.png)
+![Personal Details Preview](https://syncsavings.github.io/integration-guide/images/signup_personal-preview.png) | ![Contact Details Preview](https://syncsavings.github.io/integration-guide/images/signup_contact-preview.png)
 
 ### Bank Details
 
@@ -79,13 +79,13 @@ Users must declare a source bank account. Where they are available, we encourage
 
 When page is enabled, the form can still be prefilled with data from the distributor payload. As with the personal and contact details forms, prefilled values are not editable (as shown by the greyed-out name field below).
 
-![Bank Details Screen](/images/signup_bank-details.png)
+![Bank Details Screen](https://syncsavings.github.io/integration-guide/images/signup_bank-details.png)
 
 ### Documents
 
 There are a number of critical documents (from both Sync and partner bank) that users must acknowledge and accept before an account can be created.
 
-![Documents Screen - Not Viewed](/images/signup_documents-notviewed.png) | ![Documents Screen - Viewed](/images/signup_documents-viewed.png)
+![Documents Screen - Not Viewed](https://syncsavings.github.io/integration-guide/images/signup_documents-notviewed.png) | ![Documents Screen - Viewed](https://syncsavings.github.io/integration-guide/images/signup_documents-viewed.png)
 
 On agreeing to Terms & Conditions and submitting, a `Saver` record is created in our system.
 
@@ -93,13 +93,13 @@ On agreeing to Terms & Conditions and submitting, a `Saver` record is created in
 
 Some of our partners will require their users to undergo a form of identity verification. These users will undergo quick automated checks (eKYC) based on data provided. These users will begin in a `pending` state whilst they await results from the automatic checks on the data provided.
 
-![Pending Status](/images/signup_idv-pending.png)
+![Pending Status](https://syncsavings.github.io/integration-guide/images/signup_idv-pending.png)
 
 If all checks pass, users will be moved on to the Sign up Complete step, where their bank account will be created.
 
 There are two other non-Success outcomes of the automated checks.
 
-![Escalated Status](/images/signup_idv-escalated.png) | ![Rejected Status](/images/signup_idv-rejected.png)
+![Escalated Status](https://syncsavings.github.io/integration-guide/images/signup_idv-escalated.png) | ![Rejected Status](https://syncsavings.github.io/integration-guide/images/signup_idv-rejected.png)
 :---:|:---:
 The `escalated` status is the result of missing or inconsistent data. As such, users will be provided with a link to double check provided data, fill anything missing and uploaded any necessary supporting documentation. | A user may be found to have certain history, associations or other sanctions that may forbid them from opening a UK bank account. These users will be put into the `rejected` state.
 
@@ -110,7 +110,7 @@ The `escalated` status is the result of missing or inconsistent data. As such, u
 
 Upon completing `Saver` creation (and any Identity Verification), a Bank Account is created and Goal and Deposit data are committed.
 
-![Sign up Complete](/images/signup_complete.png)
+![Sign up Complete](https://syncsavings.github.io/integration-guide/images/signup_complete.png)
 
 <style>
 td, th {

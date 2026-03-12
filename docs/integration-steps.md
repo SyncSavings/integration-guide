@@ -5,12 +5,10 @@ layout: default
 ---
 
 # Integration Steps
-
 {: .no_toc }
 
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
@@ -37,33 +35,7 @@ openssl genpkey -algorithm ed25519 -out sync-plugin-private.pem
 openssl pkey -in sync-plugin-private.pem -pubout -out sync-plugin-public.pem
 ```
 
-**Action**: Generate your key pair as described, then securely send the public key to your Sync Savings integration contact. You will also receive your distributor ID during this process.
-
-## Customise your plugin
-
-To provide a seamless and personalised experience, the platform can be customised to reflect your brand design.
-
-**Provide the following design assets during onboarding:**
-
-- **Typography**:
-  - **Title Font**: Specify the font family and weight for headings.
-  - **Body Font**: Specify the font family and weight for general text.
-
-{: .note }
-💡 For fonts that are publicly available, please share the font name and weight. If the fonts are proprietary or purchased, provide either the font files or a functional CDN link.
-
-- **Colours (RGB values)**:
-  - **Heading Colour**: For main headings and titles.
-  - **Body Colour**: For general text.
-  - **Primary Colours**: To highlight buttons and interactive elements.
-  - **Background Colour**: Main background colour of the platform.
-- **Logo**:
-  - Displayed during the user sign-up journey within the platform.
-
-{: .note }
-💡 Please provide a high-definition image with transparent background.
-
-**Action**: Send your design assets, including font information, colour codes, and logo files, to your Sync Savings integration contact.
+**Action**: Generate your key pair as described, then securely send the public key to your Sync Savings integration manager or support. You will also receive your distributor ID during this process.
 
 ## Generate JWT Tokens
 

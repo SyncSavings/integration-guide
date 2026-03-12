@@ -1,10 +1,26 @@
 ---
 title: Token Payload Structure
-nav_order: 3
+nav_order: 4
 layout: default
 ---
 
 # Token Payload Structure
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{: toc }
+
+As part of authenticating user sessions, we require distributors to provide a signed token on access the Plugin.
+
+{: .note}
+💡 We encourage our distributors to provide ALL available matching data. This will reduce friction in onboarding and keep user data in sync on subsequent logins.
+
+Depending on the desired user experience and the user data available to the distributor, different data may be required or beneficial to user experience. The following page breaks down the accepted payload fields and how different scenarios may affect their usage.
+
+## Example Full Payload
 
 ```json
 {
@@ -118,3 +134,30 @@ All fields are required unless agreed otherwise.
 
 {: .important }
 Ensure data accuracy to prevent account creation issues.
+
+## Minimum Viable Payload
+
+Minimum viable payload requires some distributor-related properties that validate the session and allow fetching of necessary settings. The `email` property acts as the primary identifier for a user and must be provided.
+
+```json
+{
+  "distributorId": "my-company",
+  "institution": "Winslow Luggages",
+  "email": "christopher.robin@sync-savings.com",
+  "sourceOfFunds": "salary-or-bonus",
+  "taxResidency": "GB"
+}
+```
+
+### Password Users
+
+Password users are anonymous at the point of loading the plugin and it is understood that user data may be limited. As such, `email` is expected to be provided by the user as part of logging in or signing up and may be omitted from the token payload. The minimum data points required are the following:
+
+```json
+{
+  "distributorId": "my-company",
+  "institution": "Winslow Luggages",
+  "sourceOfFunds": "salary-or-bonus",
+  "taxResidency": "GB"
+}
+```

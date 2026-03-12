@@ -4,7 +4,7 @@ nav_order: 6
 layout: default
 ---
 
-# Getting to Understand your Plugin
+# Getting to Understand Your Plugin
 {: .no_toc }
 
 As simple as the Plugin is to use, there are a number of ways it can adapt to it's surroundings. Use this page to help **you** know what to expect from **your** Plugin

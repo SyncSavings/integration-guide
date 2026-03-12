@@ -4,7 +4,7 @@ nav_order: 7
 layout: default
 ---
 
-# Customising your Payroll Savings Plugin
+# Customising Your Payroll Savings Plugin
 {: .no_toc }
 
 In order to make your users (or your customer's users) feel as much as home possible, this document will guide you through the areas of our **Payroll Savings Plugin** that can be customised.

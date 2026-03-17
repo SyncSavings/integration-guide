@@ -2,7 +2,8 @@ title: Sync Savings Plugin Guide
 description: An implementation guide for Sync Savings' UI Plugin
 theme: just-the-docs
 
-url: https://syncsavings.github.io/integration-guide
+url: https://syncsavings.github.io
+baseurl: /integration-guide
 
 callouts_level: quiet
 callouts:
